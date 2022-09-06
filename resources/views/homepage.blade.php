@@ -7,7 +7,6 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -16,6 +15,8 @@
                 padding: 0;
                 margin: 0;
             }
+
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
             @keyframes starPulse {
                 from    { opacity: 1; }
                 to      { opacity: .4; }
@@ -141,9 +142,27 @@
                 -moz-border-radius: 100%;
                 border-radius: 100%;
             }
+
+            header{
+               position: fixed;
+               z-index: 99;
+               padding: 5px 20px;
+               font-family: 'Montserrat', sans-serif;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 2rem;
+            }
         </style>
     </head>
     <body>
+        <header>
+            <a href="/new-star">
+                SEE NEW STAR
+            </a>
+        </header>
+    
     <div id="stars"></div>
         <div id="sun"></div>
         <div id="earthOrbit">

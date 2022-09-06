@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homepage');
 });
+
+
+Route::get('/new-star', function () {
+    return view('new-star');
+});
